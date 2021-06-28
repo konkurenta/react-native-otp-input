@@ -214,10 +214,10 @@ export default class OTPInputView extends Component<InputProps, OTPInputViewStat
     }
 
     renderTextFields = () => {
-        const { pinCount, middleDash } = this.props
+        const { pinCount, middleElement } = this.props
         const array = new Array(pinCount).fill(0)
         const inputArray = array.map(this.renderOneInputField);
-        if (middleDash) inputArray.splice(pinCount / 2, 0, middleDash);
+        if (middleElement) inputArray.splice(pinCount / 2, 0, middleElement);
         return inputArray;
     }
 
