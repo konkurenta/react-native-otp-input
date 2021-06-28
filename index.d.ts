@@ -21,7 +21,7 @@ declare module "@konkurenta/react-native-otp-input" {
     /**
      * Element in middle of OTP inputs
      */
-    middleElement?: Element
+    middleElement?: JSX.Element
     /**
      * Digits of pins in the OTP
      */
